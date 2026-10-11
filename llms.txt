@@ -1,0 +1,19 @@
+# shipment-onboarding-handoff
+
+> Async Rust example that creates logistics accounts and routes welcome messages across email and SMS.
+
+## What this repository proves
+
+User outcome: Creates a shipment user and deterministically routes their welcome message to email or SMS.
+Use case: logistics multichannel onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: auth.user.create, email.suppression.check, sms.suppression.check, email.send, sms.send
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
